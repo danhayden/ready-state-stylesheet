@@ -11,5 +11,13 @@
     "lazyload"
   ],
   "author": "Dan Hayden <pythonic1@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danhayden/ready-state-stylesheet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danhayden/ready-state-stylesheet/issues"
+  },
+  "homepage": "https://github.com/danhayden/ready-state-stylesheet#readme"
 }
