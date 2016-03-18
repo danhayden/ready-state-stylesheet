@@ -1,6 +1,6 @@
 {
   "name": "ready-state-stylesheet",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Load a stylesheet once the document ready state is complete to prevent blocking rendering (useful for lazy loading web fonts)",
   "main": "index.js",
   "scripts": {
