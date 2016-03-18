@@ -17,7 +17,7 @@ readyStateStylesheet(stylesheetUrl);
 
 // or provide a callback
 readyStateStylesheet(stylesheetUrl, function () {
-  document.body.parentNode.classList.add('fonts-loaded');
+  document.documentElement.classList.add('fonts-loaded');
 });
 ```
 
