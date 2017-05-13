@@ -2,14 +2,43 @@
   "name": "ready-state-stylesheet",
   "version": "1.0.1",
   "description": "Load a stylesheet once the document ready state is complete to prevent blocking rendering (useful for lazy loading web fonts)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "stylesheet",
     "lazyload"
   ],
+  "main": "dist/ready-state-stylesheet.js",
+  "module": "dist/ready-state-stylesheet.es.js",
+  "umd:main": "dist/ready-state-stylesheet.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pretest": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --format",
+    "changelog": "standard-version",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublish": "npm run build"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "dist/**"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "7.2.3",
+    "babel-preset-env": "1.4.0",
+    "rollup": "0.41.6",
+    "rollup-plugin-babel": "2.7.1",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "rollup-plugin-uglify": "1.0.2",
+    "rollup-watch": "3.2.2",
+    "standard": "10.0.2",
+    "standard-version": "4.0.0",
+    "uglify-js-harmony": "2.7.7"
+  },
   "author": "Dan Hayden <pythonic1@gmail.com>",
   "license": "MIT",
   "repository": {
